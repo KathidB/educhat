@@ -1,4 +1,4 @@
-import { ServerList } from "../../constans/serverList";
+import { ServerList } from "../../constans/ServerList";
 
 import { LeftPanelLogo } from "../LeftPanelLogo/LeftPanelLogo";
 import styles from "./LeftPanel.module.css";
