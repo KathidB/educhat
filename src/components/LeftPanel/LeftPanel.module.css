@@ -1,0 +1,10 @@
+.leftPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 4.75rem;
+  height: 100%;
+  /* background-color: tomato; */
+  background: #1d203e4d;
+  background-color: tomato;
+}

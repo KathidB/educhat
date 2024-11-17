@@ -1,0 +1,7 @@
+body {
+  --font-size-default: 16px;
+  --font-family-default: "Raleway", Helvetica, Arial, sans-serif;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #ffffff8c;
+  --color-text-tertiary: #ffffff40;
+}
