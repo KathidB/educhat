@@ -1,0 +1,47 @@
+.serverList {
+  list-style: none;
+  margin-top: 1rem;
+  width: 100%;
+}
+.serverList hr {
+  border: 1px solid rgba(255, 255, 255, 0.171);
+}
+
+.serverList h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.serverList li,
+.serverList h3 {
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+  height: 2.5rem;
+}
+.serverList li a {
+  border-radius: 6px;
+  transition: background-color;
+}
+
+.serverList li a:hover {
+  background-color: #00000080;
+}
+
+.serverList li a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 212px;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  cursor: pointer;
+}
+.serverList li a img {
+  padding: 0.5rem;
+}
+
+.serverList li a:global(.active) {
+  background-color: #00000080;
+}

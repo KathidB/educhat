@@ -7,8 +7,9 @@
   margin-bottom: 1.5rem;
 }
 
-.servers li a:global(.active) {
-  box-shadow: 5px 5px 5px red;
+.servers li a img {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .servers button {
