@@ -1,0 +1,19 @@
+.leftBar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Zapewnia, że komponent zajmuje pełną wysokość widoku */
+  width: 20rem;
+  background: #2c2f4880;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.top {
+  flex-grow: 1; /* Top zajmuje całą pozostałą przestrzeń */
+  display: flex;
+  flex-direction: row; /* Ustaw elementy pionowo */
+}
+
+.leftBar > :last-child {
+  margin-top: auto; /* Ustawia footer na dole */
+}

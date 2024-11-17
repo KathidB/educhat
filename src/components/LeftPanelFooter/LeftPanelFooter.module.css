@@ -1,3 +1,45 @@
 .footer {
-  margin-bottom: 1rem;
+  display: flex;
+  width: 100%;
+  height: 4.5rem;
+  background: #1d203e;
+  border-bottom-left-radius: 1rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer ul li span {
+  margin-left: 0.25rem;
+}
+
+.action {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 8.75rem;
+}
+
+.action img {
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.talk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 5.625rem;
+  background: #10203e80;
 }
