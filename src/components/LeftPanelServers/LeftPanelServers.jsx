@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
-import styles from "./LeftPanelServers.module.css";
 import ADD_ICON from "../../assets/AddServer.svg";
+import styles from "./LeftPanelServers.module.css";
 
 export function LeftPanelServers({ servers }) {
   console.log(servers.length);

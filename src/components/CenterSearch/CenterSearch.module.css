@@ -1,0 +1,22 @@
+.center {
+  background: linear-gradient(#2c2f48, #2e335a4d, #1c1b334d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27.625rem;
+  height: 1.5rem;
+  border: 1px solid #ffffff2f;
+  border-radius: 4px;
+  padding-left: 6rem;
+}
+
+.center input {
+  margin-left: 4px;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.center input::placeholder {
+  color: var(--color-text-primary);
+}

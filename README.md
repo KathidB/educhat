@@ -1,3 +1,9 @@
+# Wersja Front-End aplikacji przypominającej Discord. Cel edukacyjny.
+
+# Aplikacja w produkcji
+
+# LIVE VERSION: https://edu-discord.netlify.app/
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
