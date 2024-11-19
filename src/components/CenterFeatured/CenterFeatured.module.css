@@ -19,7 +19,6 @@
   height: 13rem;
   border-radius: 1rem;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.568);
-
   overflow: hidden;
 }
 
@@ -30,25 +29,21 @@
   justify-content: flex-end;
   width: 20rem;
   height: 8.875rem;
-
   border-top-left-radius: 2rem;
   border-top-right-radius: 1rem;
-
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 0.8rem;
-
   z-index: 1;
 }
 
 .bgImg {
   position: absolute;
-  bottom: -5px;
 }
 
 .background img {
   position: absolute;
-  top: -1.8rem;
+  top: -2.1rem;
   left: 0;
   right: 0;
   bottom: 0rem;
@@ -78,14 +73,20 @@
 
 .description {
   padding: 0.5rem 0;
+  font-size: 0.8125rem;
 }
 
 .description h3 {
   padding: 0.5rem 0;
+  font-size: 1.375rem;
+  font-weight: 600;
 }
 
 .description p {
   color: var(--color-text-secondary);
+
+  font-family: Lato;
+  font-size: 13px;
 }
 
 .members {
@@ -93,5 +94,6 @@
   justify-content: space-between;
 }
 .members span {
+  font-size: 0.75rem;
   color: var(--color-text-tertiary);
 }

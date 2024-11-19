@@ -24,8 +24,8 @@ export function CenterFeatured({ servers }) {
                 <p>{featured.serverDescription}</p>
               </div>
               <div className={styles.members}>
-                <span>👨‍💻{featured.serverMembers}</span>
-                <span>🎧{featured.serverOnline}</span>
+                <span>🎧{featured.serverOnline} Online</span>
+                <span>👨‍💻{featured.serverMembers} Members</span>
               </div>
             </div>
           </li>
