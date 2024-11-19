@@ -1,9 +1,9 @@
 .featured {
   display: flex;
   flex-direction: column;
-
   width: 100%;
 }
+
 .featured ul {
   display: flex;
   justify-content: space-between;
@@ -15,51 +15,48 @@
   position: relative;
   display: flex;
   align-items: flex-end;
-
   width: 20rem;
   height: 13rem;
   border-radius: 1rem;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.568);
+
   overflow: hidden;
 }
 
 .background {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   width: 20rem;
   height: 8.875rem;
-  border-top-left-radius: 1rem;
+
+  border-top-left-radius: 2rem;
   border-top-right-radius: 1rem;
 
-  fill: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
-    radial-gradient(
-      22.86% 54.96% at 49.06% 30.28%,
-      #31376f 0%,
-      rgba(137, 75, 162, 0) 100%
-    ),
-    conic-gradient(
-      from 180deg at 50% 36.97%,
-      rgba(244, 73, 244, 0.3) 6.367961838841438deg,
-      rgba(0, 25, 192, 0.3) 153.66680145263672deg,
-      rgba(121, 118, 232, 0.3) 249.724280834198deg
-    );
-  backdrop-filter: blur(25px);
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 0.8rem;
+
+  z-index: 1;
+}
+
+.bgImg {
+  position: absolute;
+  bottom: -5px;
 }
 
 .background img {
   position: absolute;
-  top: -3rem;
+  top: -1.8rem;
   left: 0;
   right: 0;
   bottom: 0rem;
   display: flex;
   width: 2.75rem;
-  height: 2.75rem;
-  margin: 2rem auto;
-  filter: drop-shadow(0rem 0rem 0.5rem rgb(0, 0, 0));
+  width: 3rem;
+  height: 2.3rem;
+  margin: 1.9rem auto;
 }
 
 .top {
