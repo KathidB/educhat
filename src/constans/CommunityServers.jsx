@@ -10,6 +10,7 @@ import LOGO4 from "../assets/servers/4.png";
 import ICON4 from "../assets/servers/4icon.png";
 import { CenterFeatured } from "../components/CenterFeatured/CenterFeatured";
 import { CenterPopular } from "../components/CenterPopular/CenterPopular";
+import { CenterRecent } from "../components/CenterRecent/CenterRecent";
 
 export function CommunityServers() {
   const [servers, setServers] = useState([
@@ -75,6 +76,7 @@ export function CommunityServers() {
       serverPath: "/kathid",
       featured: false,
       popular: false,
+      new: true,
     },
     {
       id: 5,
@@ -87,6 +89,7 @@ export function CommunityServers() {
       serverPath: "/cooking",
       featured: false,
       popular: false,
+      new: true,
     },
     {
       id: 6,
@@ -99,6 +102,7 @@ export function CommunityServers() {
       serverPath: "/programming",
       featured: false,
       popular: false,
+      new: true,
     },
   ]);
 
@@ -106,6 +110,7 @@ export function CommunityServers() {
     <>
       <CenterFeatured servers={servers} />
       <CenterPopular servers={servers} />
+      <CenterRecent servers={servers} />
     </>
   );
 }

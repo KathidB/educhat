@@ -1,7 +1,7 @@
 .leftBar {
   display: flex;
   flex-direction: column;
-  height: 100vh; /* Zapewnia, że komponent zajmuje pełną wysokość widoku */
+  height: 100%; /* Zapewnia, że komponent zajmuje pełną wysokość widoku */
   width: 20rem;
   background: #2c2f4880;
   border-bottom-left-radius: 1rem;

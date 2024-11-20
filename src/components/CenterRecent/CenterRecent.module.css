@@ -1,0 +1,19 @@
+.recent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.recent ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.recent ul li {
+  padding: 24px;
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 1rem;
+}
