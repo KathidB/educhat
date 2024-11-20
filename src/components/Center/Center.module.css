@@ -1,5 +1,12 @@
 .center {
-  display: flex;
   flex-direction: column;
   width: 44.75rem;
+
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.center::-webkit-scrollbar {
+  display: none;
 }
