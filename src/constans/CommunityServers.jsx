@@ -11,6 +11,12 @@ import ICON4 from "../assets/servers/4icon.png";
 import { CenterFeatured } from "../components/CenterFeatured/CenterFeatured";
 import { CenterPopular } from "../components/CenterPopular/CenterPopular";
 import { CenterRecent } from "../components/CenterRecent/CenterRecent";
+import OCTA_ICON from "../assets/octaicon.png";
+import OCTA_ICON2 from "../assets/octaicon2.svg";
+import OCTA_ICON3 from "../assets/octaicon3.svg";
+import BG5 from "../assets/bg5.png";
+import BG6 from "../assets/bg6.png";
+import BG7 from "../assets/bg7.png";
 
 export function CommunityServers() {
   const [servers, setServers] = useState([
@@ -68,11 +74,11 @@ export function CommunityServers() {
     {
       id: 4,
       ServerName: "Kathid - Streamer",
-      serverIcon: ICON1,
-      serverImg: LOGO1,
-      serverDescription: "Twitch Streamer Kathid and his community",
+      serverIcon: OCTA_ICON,
+      serverImg: BG5,
+      serverDescription: "Kathid - Twitch Streamer and his community.",
       serverOnline: "12",
-      serverMembers: "678",
+      serverMembers: "67",
       serverPath: "/kathid",
       featured: false,
       popular: false,
@@ -81,11 +87,11 @@ export function CommunityServers() {
     {
       id: 5,
       ServerName: "Cooking",
-      serverIcon: ICON1,
-      serverImg: LOGO1,
+      serverIcon: OCTA_ICON2,
+      serverImg: BG6,
       serverDescription: "Hungry? Let's cook!",
       serverOnline: "112",
-      serverMembers: "2678",
+      serverMembers: "59",
       serverPath: "/cooking",
       featured: false,
       popular: false,
@@ -94,8 +100,8 @@ export function CommunityServers() {
     {
       id: 6,
       ServerName: "Programming",
-      serverIcon: ICON1,
-      serverImg: LOGO1,
+      serverIcon: OCTA_ICON3,
+      serverImg: BG7,
       serverDescription: "Best place to learn programming.",
       serverOnline: "2112",
       serverMembers: "223678",
