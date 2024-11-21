@@ -1,0 +1,11 @@
+.rightBar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 15.25rem;
+  background: #2c2f4880;
+  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background: #2c2f48;
+  box-shadow: 1px 0px 0px 0px rgba(255, 255, 255, 0.1) inset;
+}
