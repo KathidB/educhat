@@ -1,16 +1,14 @@
 import { RightPanelTitle } from "../RightPanelTitle/RightPanelTitle";
 import styles from "./NewMembers.module.css";
 
-export function NewMembers({ userList, isError, isLoading,text }) {
-  console.log(userList.results);
-
+export function NewMembers({ userList, isError, isLoading, title }) {
   if (isError) {
     return <p>Error loading data...</p>;
   }
 
   return (
     <div>
-      <RightPanelTitle>{text}</RightPanelTitle>
+      <RightPanelTitle>{title}</RightPanelTitle>
 
       {isLoading ? (
         <span>Loading...</span>

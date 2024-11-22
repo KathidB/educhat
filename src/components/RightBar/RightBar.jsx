@@ -39,13 +39,13 @@ export function RightBar() {
           userList={userList}
           error={isError}
           isLoading={isLoading}
-          text={"New Members"}
+          title={"New Members"}
         />
         <NewMembers
           userList={userList}
           error={isError}
           isLoading={isLoading}
-          text={"Recent Activity"}
+          title={"Recent Activity"}
         />
       </RightWrapper>
     </div>

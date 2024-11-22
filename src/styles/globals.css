@@ -9,8 +9,16 @@ body {
   font-family: var(--font-family-default);
   color: var(--color-text-primary);
   font-optical-sizing: auto;
-  background: radial-gradient(60% 106% at 34.94% 108.33%, #F7CBFD 0%, #7758D1 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background: radial-gradient(
+    60% 106% at 34.94% 108.33%,
+    #f7cbfd 0%,
+    #7758d1 100%
+  );
+}
 
+h3 {
+  color: var(--color-text-default);
+  font-size: 22px;
 }
 
 #root {
