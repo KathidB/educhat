@@ -1,32 +1,15 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import ADD_ICON from "../../assets/AddServer.svg";
-import LOGO from "../../assets/Group1.svg";
 import styles from "./LeftPanelServers.module.css";
-
+import { createPortal } from "react-dom";
 import { useContext } from "react";
 import { JoinedServersContext } from "../../context/JoinedServersContext";
+import { NewServerModal } from "../NewServerModal/NewServerModal";
 
 export function LeftPanelServers() {
   const { servers, setServers } = useContext(JoinedServersContext);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [newServerName, setNewServerName] = useState("");
-
-  function createNewServer() {
-    if (newServerName.trim()) {
-      setServers((prevV) => [
-        ...prevV,
-        {
-          id: prevV.length, // Ensure unique ID
-          ServerName: newServerName,
-          serverPath: `/${newServerName.toLowerCase().replace(/ /g, "-")}`,
-          serverImg: LOGO,
-        },
-      ]);
-      setNewServerName(""); // Reset input
-      setIsModalOpen(false); // Close modal
-    }
-  }
 
   return (
     <>
@@ -39,26 +22,20 @@ export function LeftPanelServers() {
           </li>
         ))}
       </ul>
-      <button onClick={() => setIsModalOpen(true)}>
+      <button className={styles.newServer} onClick={() => setIsModalOpen(true)}>
         <img src={ADD_ICON} alt="add new server" />
       </button>
 
-      {/* Modal */}
-      {isModalOpen && (
-        <div className={styles.modal}>
-          <div className={styles.modalContent}>
-            <h2>Create a New Server</h2>
-            <input
-              type="text"
-              placeholder="Enter server name"
-              value={newServerName}
-              onChange={(e) => setNewServerName(e.target.value)}
-            />
-            <button onClick={createNewServer}>Create</button>
-            <button onClick={() => setIsModalOpen(false)}>Cancel</button>
-          </div>
-        </div>
-      )}
+      {isModalOpen &&
+        createPortal(
+          <NewServerModal
+            setServers={setServers}
+            onClose={() => {
+              setIsModalOpen(false);
+            }}
+          />,
+          document.body
+        )}
     </>
   );
 }
