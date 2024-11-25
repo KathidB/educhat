@@ -1,5 +1,4 @@
-import { CommunityServers } from "../../constans/CommunityServers";
-
+import { Outlet } from "react-router-dom";
 import { CenterHeader } from "../CenterHeader/CenterHeader";
 import { CenterWrapper } from "../CenterWrapper/CenterWrapper";
 import styles from "./CenterMain.module.css";
@@ -9,7 +8,7 @@ export function CenterMain() {
     <main className={styles.main}>
       <CenterWrapper>
         <CenterHeader />
-        <CommunityServers />
+        <Outlet />
       </CenterWrapper>
     </main>
   );

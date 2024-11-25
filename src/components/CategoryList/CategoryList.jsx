@@ -1,15 +1,17 @@
-import styles from "./CenterFeatured.module.css";
+import styles from "./CategoryList.module.css";
 import BG from "../../assets/bg.png";
 import { CommunityTitle } from "../CommunityTitle/CommunityTitle";
+import { useContext } from "react";
+import { CommunityServersContext } from "../../context/CommunityServersContext";
 
-export function CenterFeatured({ servers }) {
-  const featuresServers = servers.filter((item) => item.featured);
+export function CategoryList() {
+  const { servers } = useContext(CommunityServersContext);
 
   return (
     <div className={styles.featured}>
-      <CommunityTitle>Featured Community</CommunityTitle>
+      <CommunityTitle>Category List</CommunityTitle>
       <ul>
-        {featuresServers.map((featured) => (
+        {servers.map((featured) => (
           <li
             style={{ backgroundImage: `url(${featured.serverImg})` }}
             key={featured.id}
