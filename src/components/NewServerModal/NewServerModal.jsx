@@ -43,7 +43,7 @@ export function NewServerModal({ setServers, onClose }) {
         <input
           id="serverName"
           type="text"
-          placeholder="Minumum 5 characters"
+          placeholder="Minumum 3 characters"
           onChange={(e) => setNewServerName(e.target.value)}
         />
 
@@ -52,7 +52,7 @@ export function NewServerModal({ setServers, onClose }) {
 
         <div>
           <button
-            disabled={newServerName.length > 5 ? false : true}
+            disabled={newServerName.length > 2 ? false : true}
             onClick={handleSubmit}
           >
             Create

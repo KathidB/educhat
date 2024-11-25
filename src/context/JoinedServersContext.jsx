@@ -26,19 +26,19 @@ export function JoinedServersProvider({ children }) {
     {
       id: 2,
       ServerName: "Education",
-      serverPath: "/education",
+      serverPath: "/music",
       serverImg: LOGO3,
     },
     {
       id: 3,
       ServerName: "Programming",
-      serverPath: "/programming",
+      serverPath: "/music",
       serverImg: LOGO4,
     },
     {
       id: 4,
       ServerName: "AI",
-      serverPath: "/ai",
+      serverPath: "/music",
       serverImg: LOGO5,
     },
   ]);

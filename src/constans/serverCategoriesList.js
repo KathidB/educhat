@@ -1,5 +1,4 @@
 import EDU from "../assets/category icons/Education.svg";
-
 import ENTERTAINMENT from "../assets/category icons/Entertainment.svg";
 import EXPLORE from "../assets/category icons/Explore.svg";
 import GAME from "../assets/category icons/Game.svg";
@@ -20,27 +19,27 @@ export const SERVER_CATEGORIES_LIST = [
   },
   {
     serverCategory: "Gaming",
-    serverCategoryPath: "/gaming",
+    serverCategoryPath: "/music",
     img: GAME,
   },
   {
     serverCategory: "Education",
-    serverCategoryPath: "/education",
+    serverCategoryPath: "/music",
     img: EDU,
   },
   {
     serverCategory: "Science & Tech",
-    serverCategoryPath: "/science-tech",
+    serverCategoryPath: "/music",
     img: TECH,
   },
   {
     serverCategory: "Entertainment",
-    serverCategoryPath: "/entertainment",
+    serverCategoryPath: "/music",
     img: ENTERTAINMENT,
   },
   {
     serverCategory: "Student Hubs",
-    serverCategoryPath: "/student-hubs",
+    serverCategoryPath: "/music",
     img: STUDENT_HUB,
   },
 ];
