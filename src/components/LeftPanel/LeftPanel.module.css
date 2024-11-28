@@ -5,4 +5,6 @@
   width: 4.75rem;
   background: #1d203e4d;
   border-top-left-radius: 1rem;
+  height: 100%; /* Dopasowuje wysokość do .top */
+  overflow: hidden; /* Zatrzymuje przewijanie w tym komponencie */
 }

@@ -1,17 +1,19 @@
 .leftBar {
   display: flex;
   flex-direction: column;
-  height: 100%; /* Zapewnia, że komponent zajmuje pełną wysokość widoku */
+  height: 100%; 
   width: 20rem;
   background: #2c2f4880;
   border-bottom-left-radius: 1rem;
   border-top-left-radius: 1rem;
+
 }
 
 .top {
-  flex-grow: 1; /* Top zajmuje całą pozostałą przestrzeń */
+  flex-grow: 1; /* Zajmuje całą pozostałą przestrzeń */
   display: flex;
-  flex-direction: row; /* Ustaw elementy pionowo */
+  flex-direction: row;
+  overflow: hidden; /* Zapobiega rozciąganiu rodzica */
 }
 
 .leftBar > :last-child {
